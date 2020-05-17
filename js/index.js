@@ -20,7 +20,6 @@ const getProjects = () => {
             cardDiv.append(cardBodyDiv);
             colDiv.append(cardDiv)
             $("#projects").append(colDiv);
-
         })
     })
 }
