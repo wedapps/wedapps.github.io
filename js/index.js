@@ -1,9 +1,11 @@
-const getportafolio = () => {
+const getProjects = () => {
     $.ajax({
-        url: "https://api.github.com/orgs/wedapps/repos?Type=public&Sort=updated&direct=desc",
+        url: "https://api.github.com/orgs/coding-with-cynthia/repos?type=public&sort=updated&direction=desc",
         method: "GET"
-    }).then(responde => {
+    }).then(response => {
         response.map((proj, index) => {
+            console.log(`Project ${index} data`)
+            console.log(proj);
             const colDiv = $("<div>").attr("class", "col-sm-6 mb-3")
             const cardDiv = $("<div>").attr("class", "card");
             const cardHead = $("<h5>").attr("class", "card-header").text(proj.name);
@@ -17,10 +19,9 @@ const getportafolio = () => {
             cardDiv.append(cardHead);
             cardDiv.append(cardBodyDiv);
             colDiv.append(cardDiv)
-            $("#portafolio").append(colDiv);
-
+            $("#projects").append(colDiv);
         })
     })
 }
 
-getportafolio();
+getProjects();
