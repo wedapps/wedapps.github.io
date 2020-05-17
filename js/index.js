@@ -19,7 +19,7 @@ const getProjects = () => {
             cardDiv.append(cardHead);
             cardDiv.append(cardBodyDiv);
             colDiv.append(cardDiv)
-            $("#portafolio").append(colDiv);
+            $("#projects").append(colDiv);
 
         })
     })
