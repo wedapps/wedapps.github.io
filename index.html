@@ -12,22 +12,21 @@
   </head>
   <body>
       <!-- Adding a navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Wedapp</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#portafolio">Portafolio <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#sobremi">Sobre Mi <!--<span class="sr-only">(current)</span>--></a>
-            </li>
-          </ul>
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Wedapp</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="#projects">Projects</a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+                </div>
+            </div>
         </div>
-      </nav>
+    </nav>
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -38,15 +37,15 @@
 
       <!-- Add projects here -->
       <div class="container">
-          <h2><a name="portafolio"></a>Mis Últimos Pyectos</h2>
-          <div class="row" id="portafolio">
+          <h2><a name="projects"></a>Mis Últimos Pyectos</h2>
+          <div class="row" id="projects">
               <!-- projects cards will go here -->
           </div>
       </div>
 
       <!-- Add about me here -->
       <div class="container">
-        <h2><a name="sobremi"></a>Sobre Mi</h2>
+        <h2><a name="about"></a>Sobre Mi</h2>
         <p>Soy Daniel Alves, empezando a desarrollar en Swift, bajo el nombre de WEDAPP. Soy brasileño, viviendo en Chile desde 2009. Mi trabajo principal actualmente es en la indústria minera, en el área de Inventarios. Para más información, puedes acceder a mi página www.wedapp.io</p>
     </div>
 
