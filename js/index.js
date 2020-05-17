@@ -4,6 +4,8 @@ const getProjects = () => {
         method: "GET"
     }).then(response => {
         response.map((proj, index) => {
+            console.log(`Project ${index} data`)
+            console.log(proj);
             const colDiv = $("<div>").attr("class", "col-sm-6 mb-3")
             const cardDiv = $("<div>").attr("class", "card");
             const cardHead = $("<h5>").attr("class", "card-header").text(proj.name);
