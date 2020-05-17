@@ -1,6 +1,6 @@
 const getProjects = () => {
     $.ajax({
-        url: "https://api.github.com/orgs/wedapps/repos?type=public&sort=updated&direction=desc",
+        url: "https://api.github.com/orgs/wedapps/repos?type=public&sort=updated&direct=desc",
         method: "GET"
     }).then(response => {
         response.map((proj, index) => {
